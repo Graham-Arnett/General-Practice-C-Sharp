@@ -10,5 +10,21 @@
     public class Roller
     {
         Random Random = new Random();
+        public static void Stats()
+        {
+
+        }
+        public static void Classes()
+        {
+
+        }
+        public static void Backstory()
+        {
+
+        }
+        public static void Races()
+        {
+
+        }
     }
 }
