@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Random Random = new Random();
+            //Random Random = new Random();
             Roller.Stats();
             Roller.Classes();
             Roller.Backstory();
@@ -15,10 +15,14 @@
     public class Roller
     {
         //Random Random = new Random();
-        public static void Stats(Random random)
+        public static void Stats()
         {
             //int score = random.Next(1,7);
+            Random random = new Random();
             int[] scoreArray = [6];
+            int classPick = random.Next(1,5);
+            int racePick = random.Next(1,5);
+            int backPick = random.Next(1,5);
 
             for(int i = 0; i <1; i++)
             {
@@ -31,7 +35,7 @@
             }
             Console.WriteLine($"Your strength is: {scoreArray}");
         }
-        public static void Classes(Random random)
+        public static void Classes(int classPick)
         {
 
         }
