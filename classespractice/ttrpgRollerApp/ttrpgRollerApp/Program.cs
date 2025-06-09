@@ -1,4 +1,6 @@
-﻿namespace ttrpgRollerApp
+﻿using System.Xml;
+
+namespace ttrpgRollerApp
 {
     internal class Program
     {
@@ -35,9 +37,9 @@
             }
             Console.WriteLine($"Your strength is: {scoreArray}");
         }
-        public static void Classes(int classPick)
+        public static void Classes(Random random)
         {
-
+            int classPick = random.Next(1, 5);
         }
         public static void Backstory()
         {
