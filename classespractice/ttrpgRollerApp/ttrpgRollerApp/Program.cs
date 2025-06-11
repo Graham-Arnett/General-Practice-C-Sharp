@@ -9,7 +9,12 @@ namespace ttrpgRollerApp
             Console.WriteLine("Hello, World!");
             //Random Random = new Random();
             Roller.Stats();
-            Roller.Classes();
+            string[] statNames = {"STRENGTH","INTELLIGENCE","CONSTITUTION","DEXTERITY","CHARISMA","WISDOM"};
+            for (int i = 0; i < 6; i++) 
+            {
+                Console.Write($"" + statNames[i] + ": " + Roller.Stats()[i]);
+            }
+            //Roller.Classes();
             Roller.Backstory();
             Roller.Races();
         }
