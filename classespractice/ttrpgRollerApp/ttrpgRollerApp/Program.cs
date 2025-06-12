@@ -12,7 +12,7 @@ namespace ttrpgRollerApp
             string[] statNames = {"STRENGTH","INTELLIGENCE","CONSTITUTION","DEXTERITY","CHARISMA","WISDOM"};
             for (int i = 0; i < 6; i++) 
             {
-                Console.Write($"" + statNames[i] + ": " + Roller.Stats()[i]);
+                Console.Write($"" + statNames[i] + ": " + Roller.Stats());
             }
             //Roller.Classes();
             Roller.Backstory();
@@ -22,7 +22,7 @@ namespace ttrpgRollerApp
     public class Roller
     {
         //Random Random = new Random();
-        public static void Stats()
+        public static int Stats()
         {
             //int score = random.Next(1,7);
             Random random = new Random();
