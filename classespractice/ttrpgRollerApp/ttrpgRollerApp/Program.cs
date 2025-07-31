@@ -40,7 +40,7 @@ namespace ttrpgRollerApp
 
                 }
             }
-            Console.WriteLine($"Your strength is: {scoreArray}");
+            //Console.WriteLine($"Your strength is: {scoreArray[0]}");
             return Stats();//nope that broke it like crazy, back to the drawing board
         }
         public static void Classes(Random random)
