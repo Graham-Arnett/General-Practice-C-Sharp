@@ -10,7 +10,11 @@
             {
                 Console.Write("Please enter a number: ");
                 int num = int.Parse(Console.ReadLine());
-                if(num % 3 == 0)
+                if(num % 5 == 0 && num % 3 == 0)
+                {
+                    Console.WriteLine("FIZBUZZ");
+                }
+                else if(num % 3 == 0)
                 {
                     Console.WriteLine("FIZZ");
                 }
