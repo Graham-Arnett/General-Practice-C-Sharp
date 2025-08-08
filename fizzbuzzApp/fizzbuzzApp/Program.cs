@@ -6,6 +6,7 @@
         {
             Console.WriteLine("FizzBuzz");
             char redo;
+            char[] acceptChar = { 'y', 'Y', 'n', 'N' };
             do
             {
                 Console.Write("\n\nPlease enter a number: ");
