@@ -30,6 +30,7 @@
                 Console.Write("\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
             }while(redo == 'y'||redo=='Y');
+            //to do, add validation and stuff, idk I'm tired
         }
     }
 }
