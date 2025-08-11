@@ -29,6 +29,12 @@
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
+                do
+                {
+                    //its gonna go back through it until valid, then the bool will be checked at the end
+                    Console.Write("\n\nWould you like to go again? (y/n): ");
+                    redo = Console.ReadKey().KeyChar;
+                } while(true);
             }while(redo == 'y'||redo=='Y');
             //to do, add validation and stuff, idk I'm tired
         }
