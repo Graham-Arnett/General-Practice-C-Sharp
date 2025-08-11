@@ -6,9 +6,11 @@
         {
             Console.WriteLine("FizzBuzz");
             char redo;
+            bool gameEnd = false;
             char[] acceptChar = { 'y', 'Y', 'n', 'N' };
             do
             {
+                
                 Console.Write("\n\nPlease enter a number: ");
                 int num = int.Parse(Console.ReadLine());
                 if(num % 5 == 0 && num % 3 == 0)
@@ -27,15 +29,32 @@
                     Console.WriteLine("BUZZ");
                 }
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.Write("\n\nWould you like to go again? (y/n): ");
-                redo = Console.ReadKey().KeyChar;
+                //Console.Write("\n\nWould you like to go again? (y/n): ");
+                //redo = Console.ReadKey().KeyChar;
                 do
                 {
                     //its gonna go back through it until valid, then the bool will be checked at the end
                     Console.Write("\n\nWould you like to go again? (y/n): ");
                     redo = Console.ReadKey().KeyChar;
-                } while(true);
-            }while(redo == 'y'||redo=='Y');
+                    if (acceptChar.Contains(redo))
+                    {
+                        if (redo == 'n' || redo == 'N')
+                        {
+                            Console.WriteLine("\n\nThanks for playing!");
+                            gameEnd = true;
+                        }
+                        else if (redo == 'y' || redo == 'Y')
+                        {
+                            Console.WriteLine("\n\nLets play again!");
+                            gameEnd = false;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n\nThat is not valid, go again.");
+                    }
+                } while(acceptChar.Contains(redo));
+            }while(gameEnd == false);
             //to do, add validation and stuff, idk I'm tired
         }
     }
