@@ -28,6 +28,10 @@
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("BUZZ");
                 }
+                else
+                {
+                    Console.WriteLine("Neither fizz nor buzz");
+                }
                 Console.ForegroundColor = ConsoleColor.White;
                 //Console.Write("\n\nWould you like to go again? (y/n): ");
                 //redo = Console.ReadKey().KeyChar;
