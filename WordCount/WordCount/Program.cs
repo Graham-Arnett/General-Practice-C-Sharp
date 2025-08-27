@@ -13,7 +13,7 @@ namespace WordCount
                 int wordCount = 0;
                 Console.Write("\n\n\nPlease enter some text: ");
                 string words = Console.ReadLine();
-                for(int i = 0;i < words.Length; i++)
+                for(int i = 0;i <= words.Length; i++)
                 {
                     if(words[i] == ' ')
                     {
