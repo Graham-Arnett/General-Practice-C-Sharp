@@ -23,12 +23,13 @@ namespace WordCount
                     {
 
                     }
+                    
+                    if (!words.Contains(' '))
+                    {
+                        words += ' ';
+                        Console.WriteLine(words);
+                    }
                     Console.WriteLine($"Wordcount is: {wordCount}");
-                    //if (words[words.Length] != ' ')
-                    //{
-                    //    words += ' ';
-                    //    Console.WriteLine(words);
-                    //}
                 }
                 Console.Write("\n\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
