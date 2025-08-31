@@ -10,6 +10,7 @@ namespace WordCount
             char redo;
             do
             {
+                //ok
                 int wordCount = 0;
                 Console.Write("\n\n\nPlease enter some text: ");
                 string words = Console.ReadLine();
