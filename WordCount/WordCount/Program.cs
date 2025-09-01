@@ -11,27 +11,27 @@ namespace WordCount
             do
             {
                 //ok
-                int wordCount = 0;
+                int spaceCount = 0;
                 Console.Write("\n\n\nPlease enter some text: ");
                 string words = Console.ReadLine();
                 for(int i = words.Length - 1;i >= 0; i--)
                 {
                     if(words[i] == ' ')
                     {
-                        wordCount++;
+                        spaceCount++;
                     }
                     else
                     {
 
                     }
                     
-                    if (!words.Contains(' '))
-                    {
-                        words += ' ';
-                        Console.WriteLine(words);
-                    }
-                    Console.WriteLine($"Wordcount is: {wordCount}");
+                   
                 }
+                if (!words.Contains(' '))
+                {
+                    spaceCount += 1;
+                }
+                Console.WriteLine($"Wordcount is: {spaceCount}");
                 Console.Write("\n\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
             } while (redo == 'y' || redo == 'Y');
