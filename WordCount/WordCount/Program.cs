@@ -11,7 +11,7 @@ namespace WordCount
             do
             {
                 //ok
-                int spaceCount = 0;
+                int spaceCount = 1; //there is always at minimum one word
                 Console.Write("\n\n\nPlease enter some text: ");
                 string words = Console.ReadLine();
                 for(int i = words.Length - 1;i >= 0; i--)
@@ -27,10 +27,10 @@ namespace WordCount
                     
                    
                 }
-                if (!words.Contains(' '))
-                {
-                    spaceCount += 1;
-                }
+                //if (!words.Contains(' '))
+                //{
+                //    spaceCount += 1;
+                //}
                 Console.WriteLine($"Wordcount is: {spaceCount}");
                 Console.Write("\n\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
