@@ -15,7 +15,7 @@
                 int consCount = 0;
                 Console.Write("\n\nEnter some text: ");
                 string text = Console.ReadLine();
-                for (int i = text.Length - 1; i > 0; i++)
+                for (int i = text.Length -1; i >= 0; i--)
                 {
                     if (c.Contains(text[i]))
                     {
