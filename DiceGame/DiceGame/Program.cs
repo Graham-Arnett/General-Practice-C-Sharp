@@ -12,9 +12,10 @@
             {
                 
                 int[] r = new int[2];
-                for(int i = 0; i < 2; i++)
+                roll = random.Next(1, 7);
+                for (int i = 0; i < 2; i++)
                 {
-                    roll = random.Next(1, 7);
+                    //roll = random.Next(1, 7);
                     roll = r[i];
                 }
                 Console.WriteLine($"You got {r[0]} for your first roll and {r[1]} for your second roll!");
