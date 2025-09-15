@@ -7,18 +7,21 @@
             Console.WriteLine("Dice Game app");
             Random random = new Random();
             char redo;
-            int roll;
+           
             do
             {
                 
                 int[] r = new int[2];
-                roll = random.Next(1, 7);
-                for (int i = 0; i < 2; i++)
+                int totalRoll = 2;
+                for (int i = 0; i < totalRoll; i++)
                 {
-                    
-                    roll = r[i];
+                    //int roll = random.Next(1, 7);
+                    // roll = r[i];
+                    int roll;
+                    roll = random.Next(1,7);
+                    r[i] = roll;
                 }
-                Console.WriteLine($"You got {r[0]} for your first roll and {r[1]} for your second roll!");
+                Console.WriteLine($"\n\nYou got {r[0]} for your first roll and {r[1]} for your second roll!");
                 if (r[0] == r[1])
                 {
                     Console.WriteLine("Ewwww you got doubles that's GROSS");
