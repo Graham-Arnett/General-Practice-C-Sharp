@@ -15,8 +15,7 @@
                 int totalRoll = 2;
                 for (int i = 0; i < totalRoll; i++)
                 {
-                    //int roll = random.Next(1, 7);
-                    // roll = r[i];
+                    
                     int roll;
                     roll = random.Next(1,7);
                     r[i] = roll;
