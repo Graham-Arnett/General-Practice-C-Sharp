@@ -13,7 +13,7 @@
                 Console.Write("Enter a speed in miles per hour: ");
                 double speed = double.Parse(Console.ReadLine());
 
-                double hour;//idk
+                double hour;//idkstillworking
                 Console.Write("\n\n\nWould you like to go again? (y/n): ");
                 redo = Console.ReadKey().KeyChar;
             } while (redo == 'y' || redo == 'Y');
