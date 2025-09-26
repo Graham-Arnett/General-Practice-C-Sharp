@@ -8,9 +8,9 @@
             char redo;
             do
             {
-                Console.Write("Please enter a distance here in miles: ");
+                Console.Write("\nPlease enter a distance here in miles: ");
                 double miles = double.Parse(Console.ReadLine());
-                Console.Write("Enter a speed in miles per hour: ");
+                Console.Write("\nEnter a speed in miles per hour: ");
                 double speed = double.Parse(Console.ReadLine());
 
                 double hour = miles / speed;
