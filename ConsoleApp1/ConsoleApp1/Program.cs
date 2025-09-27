@@ -6,13 +6,14 @@
         {
             Console.WriteLine("Travel Time App!");
             char redo;
+            //this takes your input for miles and speed as doubles, and returns the time it would take you to go that distance
             do
             {
                 Console.Write("\nPlease enter a distance here in miles: ");
                 double miles = double.Parse(Console.ReadLine());
                 Console.Write("\nEnter a speed in miles per hour: ");
                 double speed = double.Parse(Console.ReadLine());
-
+                
                 double hour = miles / speed;
                 int wholeHour = (int)hour;
                 int minutes = (int) ((hour -  wholeHour) * 60);
