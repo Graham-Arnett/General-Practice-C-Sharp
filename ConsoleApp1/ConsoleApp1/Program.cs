@@ -16,6 +16,7 @@
                 
                 double hour = miles / speed;
                 int wholeHour = (int)hour;
+
                 int minutes = (int) ((hour -  wholeHour) * 60);
                 Console.WriteLine($"\n\nAt a speed of {speed} miles per hour, it would take you {wholeHour} hours and {minutes} minutes to go {miles} miles.");
                 Console.Write("\n\n\nWould you like to go again? (y/n): ");
