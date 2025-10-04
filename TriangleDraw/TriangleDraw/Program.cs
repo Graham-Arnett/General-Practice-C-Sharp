@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Triangle Drawing App");
             char redo;
-            //how can I make this centered
+            //how can I make this centered???
             do
             {
                 Console.Write("\n\nEnter a number: ");
