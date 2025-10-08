@@ -10,7 +10,7 @@
             {
                 Console.Write("Would you like to design your face or let it randomize? (d or r): ");
                 char initChoice = Console.ReadKey().KeyChar;
-                string[] top = {"////////////"};
+                string[] top = {"///////////","-----------","___________","===========","77777777777"};
                 if(initChoice == 'r')
                 {
                     for (int i = 0; i < 3; i++)
