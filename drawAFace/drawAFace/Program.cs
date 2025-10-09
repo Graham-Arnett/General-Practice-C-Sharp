@@ -6,12 +6,14 @@
         {
             Console.WriteLine("Facedraw app! This will use user input fromp prompts to combine strings to make an ascii face");
             char redo;
+            Random random = new Random();
             do
             {
                 Console.Write("Would you like to design your face or let it randomize? (d or r): ");
                 char initChoice = Console.ReadKey().KeyChar;
                 string[] top =    {"///////////", "----------",   "___________",  "===========","77777777777"};
-                string[] middle = {"| O     O |", "| ^  7  ^ |",  "| :     : |",  "| 0  0  0 |" };
+                string[] middle = {"| O     O |", "| ^  7  ^ |",  "| :     : |",  "| 0  0  0 |","( U      U )" };
+                string[] bottom = { };
                 if(initChoice == 'r')
                 {
                     for (int i = 0; i < 3; i++)
